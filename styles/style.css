@@ -61,12 +61,67 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
 }
 
 .search-form__fieldset-title {
  font-size: 18px;
  font-weight: 400;
  margin-bottom: 5px;
+}
+
+.search-form__textfield {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #FFFFFFB2;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__label-text {
+  appearance: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px #fff solid;
+  align-self: center;
+  margin-right: 5px;
+  position: relative;
+}
+
+/*
+.search-form__pseudo-checkbox::after {
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  top: 0.5px;
+  left: 0.5px;
+  position: absolute;
+}
+*/
+
+fieldset {
+ border: none; 
 }
 
 .content__details {
